@@ -10,7 +10,7 @@ function App() {
   function searchImage(e){
     e.preventDefault()
     if(!word){
-      alert("กรุณาป้อนเลขประจำตัวพนักงานด้วยครับ")
+      alert("กรุณาป้อนเลขประจำตัวพนักงานด้วยนะครับ")
     }else{
       //เรียกใช้งาน API
       fetchImageFromAPI()
@@ -23,7 +23,7 @@ function App() {
     const data= await res.json()
     const result = data.results
     if(result.length==0){
-      alert("ไม่มีข้อมูลรูปภาพ")
+      alert("ไม่มีข้อมูลรูปภาพดังกล่าว")
       setWord("")
     }else{
       //แสดงข้อมูลรูปภาพ
