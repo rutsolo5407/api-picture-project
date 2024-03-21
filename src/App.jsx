@@ -10,7 +10,7 @@ function App() {
   function searchImage(e){
     e.preventDefault()
     if(!word){
-      alert("กรุณาป้อนเลขประจำตัวพนักงานด้วยนะครับ")
+      alert("กรุณาป้อนเลขประจำตัวพนักงานด้วยครับ")
     }else{
       //เรียกใช้งาน API
       fetchImageFromAPI()
@@ -34,7 +34,7 @@ function App() {
     <>
         <h1>ระบบค้นหารูปภาพพนักงานกฟผ.ด้วย API</h1>
         <form onSubmit={searchImage}>
-          <input type="text" placeholder='ป้อนเลขประจำตัวของพนักงาน กฟผ.'
+          <input type="text" placeholder='กรุณาป้อนเลขประจำตัวพนักงาน กฟผ.'
           value={word}
           onChange={(e)=>setWord(e.target.value)}
           />
